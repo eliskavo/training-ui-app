@@ -1,0 +1,16 @@
+.tableWrapper {
+  table-layout: fixed;
+
+  tbody tr {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover td {
+      background-color: rgba(0, 123, 255, 0.15);
+    }
+  }
+}
+
+.card:has(.datatable2) .card-body {
+  overflow: auto;
+}

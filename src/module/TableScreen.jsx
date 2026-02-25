@@ -1,13 +1,11 @@
-import React from 'react';
-import { Container } from 'reactstrap';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { Container } from "reactstrap";
+import { Table } from "../components/Table";
 
-export function TableScreen(props) {
-	const { t } = useTranslation();
-
-	return (
-		<Container className='h-100'>
-			{t('Training|Hello, there is nothing here yet!')}
-		</Container>
-	);
-}
+export const TableScreen = () => {
+  return (
+    <Container fluid className="d-flex flex-column flex-grow-1 overflow-hidden">
+      <Table />
+    </Container>
+  );
+};
