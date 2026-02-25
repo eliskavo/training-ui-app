@@ -12,7 +12,7 @@ export const Table = () => {
   const columns = useMemo(
     () => [
       {
-        title: <span className="bi bi-person">{t("Table|Username")}</span>,
+        title: <span className="d-flex align-items-center gap-1"><i className="bi bi-person"></i>{t("Table|Username")}</span>,
         render: ({ row, ridx }) => (
           <Link
             to={`/users/${row.id}`}
@@ -26,7 +26,7 @@ export const Table = () => {
         ),
       },
       {
-        title: <span className="bi bi-envelope"> {t("Table|Email")}</span>,
+        title: <span className="d-flex align-items-center gap-1"><i className="bi bi-envelope"></i>{t("Table|Email")}</span>,
         render: ({ row }) => (
           <Link
             to={`/users/${row.id}`}
@@ -37,7 +37,7 @@ export const Table = () => {
         ),
       },
       {
-        title: <span className="bi bi-calendar"> {t("Table|Created")}</span>,
+        title: <span className="d-flex align-items-center gap-1"><i className="bi bi-calendar"></i>{t("Table|Created")}</span>,
         render: ({ row }) => (
           <Link
             to={`/users/${row.id}`}
@@ -48,12 +48,7 @@ export const Table = () => {
         ),
       },
       {
-        title: (
-          <span className="bi bi-calendar-check">
-            {" "}
-            {t("Table|Last Sign In")}
-          </span>
-        ),
+        title: <span className="d-flex align-items-center gap-1"><i className="bi bi-calendar-check"></i>{t("Table|Last Sign In")}</span>,
         render: ({ row }) => (
           <Link
             to={`/users/${row.id}`}
@@ -64,7 +59,7 @@ export const Table = () => {
         ),
       },
       {
-        title: <span className="bi bi-geo-alt"> {t("Table|Address")}</span>,
+        title: <span className="d-flex align-items-center gap-1"><i className="bi bi-geo-alt"></i>{t("Table|Address")}</span>,
         render: ({ row }) => (
           <Link
             to={`/users/${row.id}`}
